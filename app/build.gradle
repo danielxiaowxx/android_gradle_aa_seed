@@ -26,14 +26,26 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+    packagingOptions {
+        exclude "META-INF/notice.txt"
+        exclude "META-INF/license.txt"
+        exclude "META-INF/ASL2.0"
+        exclude "META-INF/LICENSE"
+        exclude "META-INF/NOTICE"
+    }
 }
 
 dependencies {
     compile 'com.android.support:support-v4:19.0.1'
     compile 'com.android.support:appcompat-v7:+'
+
     apt "org.androidannotations:androidannotations:$AAVersion"
     compile "org.androidannotations:androidannotations-api:$AAVersion"
-    
-    
+
+    compile 'com.loopj.android:android-async-http:1.4.4'
+    compile 'ch.acra:acra:4.5.0'
+
+    compile 'org.apache.commons:commons-lang3:3.3.2'
+
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }

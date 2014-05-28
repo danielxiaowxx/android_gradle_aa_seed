@@ -15,6 +15,7 @@
     </wildcardResourcePatterns>
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true">
+        <option name="trace" value="true" />
         <processorPath useClasspath="true" />
       </profile>
     </annotationProcessing>
