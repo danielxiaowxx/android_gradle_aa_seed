@@ -21,5 +21,5 @@
 4. 修改res/values/config.xml  
 	根据实际情况对配置进行修改
     
-5. 全局替换		
+5. 全局替换并且更改文件夹名称		
 	将com.daniel.android_gradle_aa_seed替换成实际的包名，如com.globalmarket.like
