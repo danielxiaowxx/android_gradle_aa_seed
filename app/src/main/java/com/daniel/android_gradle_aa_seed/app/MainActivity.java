@@ -9,8 +9,8 @@ import android.view.MenuItem;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.daniel.android_gradle_aa_seed.app.bo.ContactBO;
 import com.daniel.android_gradle_aa_seed.app.secure.adapter.ContactListAdapter;
+import com.daniel.android_gradle_aa_seed.app.secure.bo.ContactBO;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Bean;

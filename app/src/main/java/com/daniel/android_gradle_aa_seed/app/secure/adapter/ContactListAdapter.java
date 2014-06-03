@@ -5,7 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
-import com.daniel.android_gradle_aa_seed.app.bo.ContactBO;
+import com.daniel.android_gradle_aa_seed.app.secure.bo.ContactBO;
 import com.daniel.android_gradle_aa_seed.app.secure.itemview.ContactListItem;
 import com.daniel.android_gradle_aa_seed.app.secure.itemview.ContactListItem_;
 

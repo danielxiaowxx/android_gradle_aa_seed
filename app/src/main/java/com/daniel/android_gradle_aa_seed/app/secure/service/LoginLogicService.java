@@ -1,13 +1,18 @@
 package com.daniel.android_gradle_aa_seed.app.secure.service;
 
+import com.daniel.android_gradle_aa_seed.app.dao.db.DaoManager;
+import com.daniel.android_gradle_aa_seed.app.dao.db.User;
 import com.daniel.android_gradle_aa_seed.common.CommonService;
 import com.daniel.android_gradle_aa_seed.common.DxJsonHttpResponseHandler;
 import com.daniel.android_gradle_aa_seed.utils.HttpClientUtil;
 import com.loopj.android.http.RequestParams;
 
+import org.androidannotations.annotations.Background;
 import org.androidannotations.annotations.Bean;
 import org.androidannotations.annotations.EBean;
 import org.apache.http.Header;
+
+import java.util.Date;
 
 /**
  * Created by Daniel on 14-5-5.
@@ -24,6 +29,9 @@ public class LoginLogicService {
 
     @Bean
     HttpClientUtil httpClientUtil;
+
+    @Bean
+    DaoManager daoManager;
 
     public void doLogin(String username, String password) {
         RequestParams params = new RequestParams();
@@ -54,6 +62,13 @@ public class LoginLogicService {
 //                loginViewService.doLoginFail();
 //            }
         });
+    }
+
+    @Background
+    public void addUser(String username, String password) {
+        User user = new User(null, username, password, new Date());
+        daoManager.getUserDao().insert(user);
+        loginViewService.doAddUserSuccess(user.getId());
     }
 
 }

@@ -1,19 +1,15 @@
 package com.daniel.android_gradle_aa_seed.app.secure.itemview;
 
 import android.content.Context;
-import android.util.AttributeSet;
 import android.util.Log;
-import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.daniel.android_gradle_aa_seed.app.R;
-import com.daniel.android_gradle_aa_seed.app.bo.ContactBO;
+import com.daniel.android_gradle_aa_seed.app.secure.bo.ContactBO;
 
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EViewGroup;
-import org.androidannotations.annotations.RootContext;
 import org.androidannotations.annotations.ViewById;
 
 /**

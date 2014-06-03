@@ -43,4 +43,11 @@ public class LoginActivity extends ActionBarActivity {
         loginLogicService.doLogin(email, password);
     }
 
+    @Click(R.id.email_register_button)
+    protected void handleRegisterEvent() {
+        String email = emailView.getText().toString();
+        String password = passwordView.getText().toString();
+        loginLogicService.addUser(email, password);
+    }
+
 }

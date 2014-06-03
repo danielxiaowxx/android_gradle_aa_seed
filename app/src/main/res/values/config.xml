@@ -8,4 +8,6 @@
     <integer name="core_pool_size">2</integer> <!--线程池维护线程的最少数量-->
     <integer name="max_pool_size">4</integer> <!--线程池维护线程的最大数量-->
 
+    <string name="db_name">daniel_db</string>
+
 </resources>

@@ -1,4 +1,4 @@
-package com.daniel.android_gradle_aa_seed.app.bo;
+package com.daniel.android_gradle_aa_seed.app.secure.bo;
 
 /**
  * Created by Daniel on 14-5-13.

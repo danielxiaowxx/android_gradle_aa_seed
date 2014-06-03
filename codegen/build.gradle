@@ -1,0 +1,13 @@
+apply plugin: 'java'
+
+task(runSimple, dependsOn: 'classes', type: JavaExec) {
+    main = 'com.daniel.codegen.DaoGenerator'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+defaultTasks 'runSimple'
+
+dependencies {
+    compile 'de.greenrobot:greendao-generator:1.3.1'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
