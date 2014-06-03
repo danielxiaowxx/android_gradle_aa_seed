@@ -1,4 +1,4 @@
-package com.daniel.android_gradle_aa_seed.app.secure.service;
+package com.daniel.android_gradle_aa_seed.app.demo.service;
 
 import com.daniel.android_gradle_aa_seed.app.dao.db.DaoManager;
 import com.daniel.android_gradle_aa_seed.app.dao.db.User;
@@ -19,13 +19,13 @@ import java.util.Date;
  */
 
 @EBean
-public class LoginLogicService {
+public class DemoLogicService {
 
     @Bean
     CommonService commonService;
 
     @Bean
-    LoginViewService loginViewService;
+    DemoViewService loginViewService;
 
     @Bean
     HttpClientUtil httpClientUtil;

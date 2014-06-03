@@ -8,55 +8,52 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.daniel.android_gradle_aa_seed.app.secure.controller.LoginActivity">
+    tools:context="com.daniel.android_gradle_aa_seed.app.demo.controller.DemoActivity">
 
     <LinearLayout
-        android:id="@+id/email_login_form"
+        android:id="@+id/demo_login_form"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <AutoCompleteTextView
-            android:id="@+id/email"
+            android:id="@+id/demo_email_actv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/prompt_email"
+            android:hint="@string/email"
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:singleLine="true"/>
 
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/demo_password_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/prompt_password"
-            android:imeActionId="@+id/login"
-            android:imeActionLabel="@string/action_sign_in_short"
-            android:imeOptions="actionUnspecified"
+            android:hint="@string/password"
             android:inputType="textPassword"
             android:maxLines="1"
             android:singleLine="true"/>
 
         <Button
-            android:id="@+id/email_sign_in_button"
+            android:id="@+id/demo_signin_btn"
             style="?android:textAppearanceSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="@string/action_sign_in"
+            android:text="@string/sign_in"
             android:textStyle="bold"/>
 
         <Button
-            android:id="@+id/email_register_button"
+            android:id="@+id/demo_register_btn"
             style="?android:textAppearanceSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="@string/action_register"
+            android:text="@string/register"
             android:textStyle="bold"/>
 
         <TextView
-            android:id="@+id/tip_txt"
+            android:id="@+id/demo_tip_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 

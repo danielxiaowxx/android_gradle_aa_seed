@@ -1,4 +1,4 @@
-package com.daniel.android_gradle_aa_seed.app.secure.service;
+package com.daniel.android_gradle_aa_seed.app.demo.service;
 
 import android.widget.TextView;
 
@@ -13,9 +13,9 @@ import org.androidannotations.annotations.ViewById;
  */
 
 @EBean
-public class LoginViewService {
+public class DemoViewService {
 
-    @ViewById(R.id.tip_txt)
+    @ViewById(R.id.demo_tip_tv)
     TextView tipTextView;
 
     @UiThread

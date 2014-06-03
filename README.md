@@ -15,9 +15,11 @@
 2. 修改common/CommonService  
 	根据实际的出错信息提示交互设计，修改handleErrorResponse方法
     
-4. 修改common/DxJsonHttpResponseHandler    
+3. 修改common/DxJsonHttpResponseHandler    
 	这里假定服务器返回数据格式为{error:false, result:...}和{error:true, message:""}。如果格式不同，请修改该类
     
 4. 修改res/values/config.xml  
 	根据实际情况对配置进行修改
     
+5. 全局替换		
+	将com.daniel.android_gradle_aa_seed替换成实际的包名，如com.globalmarket.like
