@@ -5,14 +5,19 @@
 
 ## 遵守的规范
 
-1. 为避免不同的VIEW命名冲突，ID的命名以可以辨别VIEW的字母开关，例如activity_demo.xml里面的TextView,可命名为android:id="@id+/demo\_txt", Button可命
+1. 为避免不同的VIEW命名冲突，ID的命名以可以辨别VIEW的字母开关，如activity_demo.xml里面的
 
-2. 通用的组件样式写在styles.xml里面，如
-        <style name="com.globalmarket.like.style.primaryBtn" parent="android:Widget.Button">
-            <item name="android:textSize">@dimen/text_size_normal</item>
-            <item name="android:background">@drawable/bg_login_btn</item>
-            <item name="android:textColor">@color/white</item>
-        </style>       
+	TextView, 可命名为android:id="@id+/demo\_txt"	
+
+	Button, 可命名为android:id="@id+/demo\_btn"
+
+2. 通用的组件样式写在styles.xml里面，如	
+  	
+		<style name="com.globalmarket.like.style.primaryBtn" parent="android:Widget.Button">
+		    <item name="android:textSize">@dimen/text_size_normal</item>
+		    <item name="android:background">@drawable/bg_login_btn</item>
+		    <item name="android:textColor">@color/white</item>
+		</style>       
         
         #引用样式
         <Button
@@ -24,13 +29,17 @@
             style="@style/com.globalmarket.like.style.primaryBtn" />
 
 3. 字体大小等定义在dimens.xml里面，如
+
 		<dimen name="text_size_normal">18sp</dimen>
         
-4. 结构划分与类	
+4. 结构划分与类
+	
   	controller：存放\*\*\*Activity类	
+
     对应着activity_\*\*\*.xml布局，负责处理用户的交互事件
     
     service: 存放\*\*\*LogicService类和\*\*\*ViewService类		
+
     \*\*\*LogicService负责接收\*\*\*Activity的调用，处理完成后调用\*\*\*ViewService更新UI
         
 
