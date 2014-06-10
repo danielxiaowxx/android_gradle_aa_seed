@@ -1,4 +1,4 @@
-package com.daniel.android_gradle_aa_seed.app.demo.service;
+package com.daniel.android_gradle_aa_seed.app.module.demo.service;
 
 import android.widget.TextView;
 

@@ -24,15 +24,15 @@ import java.util.concurrent.TimeUnit;
 public class HttpClientUtil {
 
     // 配置 (配置值在config.xml中修改)
-    @StringRes(R.string.http_base_url)
+    @StringRes(R.string.config_http_base_url)
     String httpBaseUrl;
-    @StringRes(R.string.user_agent)
+    @StringRes(R.string.config_http_user_agent)
     String userAgent;
-    @IntegerRes(R.integer.keep_alive_time)
+    @IntegerRes(R.integer.config_http_keep_alive_time)
     int keepAliveTime; // 线程池维护线程所允许的空闲时间
-    @IntegerRes(R.integer.core_pool_size)
+    @IntegerRes(R.integer.config_http_core_pool_size)
     int corePoolSize; // 线程池维护线程的最少数量
-    @IntegerRes(R.integer.max_pool_size)
+    @IntegerRes(R.integer.config_http_max_pool_size)
     int maxPoolSize; // 线程池维护线程的最大数量
 
     private AsyncHttpClient client = null;

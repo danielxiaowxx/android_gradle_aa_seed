@@ -2,12 +2,12 @@
 <resources>
 
     <!--HttpClientUtil参数配置-->
-    <string name="http_base_url">http://192.168.88.107:8080/</string>
-    <string name="user_agent">daniel android app</string>
-    <integer name="keep_alive_time">10</integer>  <!--线程池维护线程所允许的空闲时间-->
-    <integer name="core_pool_size">2</integer> <!--线程池维护线程的最少数量-->
-    <integer name="max_pool_size">4</integer> <!--线程池维护线程的最大数量-->
+    <string name="config_http_base_url">http://192.168.88.107:8080/</string>
+    <string name="config_http_user_agent">daniel android app</string>
+    <integer name="config_http_keep_alive_time">10</integer>  <!--线程池维护线程所允许的空闲时间-->
+    <integer name="config_http_core_pool_size">2</integer> <!--线程池维护线程的最少数量-->
+    <integer name="config_http_max_pool_size">4</integer> <!--线程池维护线程的最大数量-->
 
-    <string name="db_name">daniel_db</string>
+    <string name="config_db_name">daniel_db</string>
 
 </resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main">#3366cc</color>
+    <color name="white">#ffffff</color>
+
+    <color name="error_shallow">#f2dede</color>
+    <color name="error">#a94442</color>
+    <color name="info_shallow">#d9edf7</color>
+    <color name="info">#31708f</color>
+    <color name="warn_shallow">#fcf8e3</color>
+    <color name="warn">#8a6d3b</color>
+
+</resources>

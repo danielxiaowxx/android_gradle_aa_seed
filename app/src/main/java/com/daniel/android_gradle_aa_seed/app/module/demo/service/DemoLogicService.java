@@ -1,8 +1,9 @@
-package com.daniel.android_gradle_aa_seed.app.demo.service;
+package com.daniel.android_gradle_aa_seed.app.module.demo.service;
 
 import com.daniel.android_gradle_aa_seed.app.dao.db.DaoManager;
 import com.daniel.android_gradle_aa_seed.app.dao.db.User;
 import com.daniel.android_gradle_aa_seed.common.CommonService;
+import com.daniel.android_gradle_aa_seed.common.Constants;
 import com.daniel.android_gradle_aa_seed.common.DxJsonHttpResponseHandler;
 import com.daniel.android_gradle_aa_seed.utils.HttpClientUtil;
 import com.loopj.android.http.RequestParams;
@@ -22,9 +23,6 @@ import java.util.Date;
 public class DemoLogicService {
 
     @Bean
-    CommonService commonService;
-
-    @Bean
     DemoViewService loginViewService;
 
     @Bean
@@ -36,7 +34,7 @@ public class DemoLogicService {
     public void doLogin(String username, String password) {
         RequestParams params = new RequestParams();
         params.put("name", username);
-        httpClientUtil.post("demo/sayHello", params, new DxJsonHttpResponseHandler() {
+        httpClientUtil.post(Constants.HTTP_SERVICE_USER_LOGIN, params, new DxJsonHttpResponseHandler() {
 
             // response中有意义的返回结果为字符串，如{error:true, result:"hello daniel"}
             @Override

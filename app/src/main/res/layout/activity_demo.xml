@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.daniel.android_gradle_aa_seed.app.demo.controller.DemoActivity">
+    tools:context="com.daniel.android_gradle_aa_seed.app.module.demo.controller.DemoActivity">
 
     <LinearLayout
         android:id="@+id/demo_login_form"

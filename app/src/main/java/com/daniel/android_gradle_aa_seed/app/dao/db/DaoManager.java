@@ -19,7 +19,7 @@ public class DaoManager {
     @RootContext
     Context context;
 
-    @StringRes(R.string.db_name)
+    @StringRes(R.string.config_db_name)
     String dbName;
 
     private DaoSession daoSession = null;

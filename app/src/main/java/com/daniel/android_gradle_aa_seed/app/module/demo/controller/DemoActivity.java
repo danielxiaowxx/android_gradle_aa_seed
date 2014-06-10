@@ -1,11 +1,11 @@
-package com.daniel.android_gradle_aa_seed.app.demo.controller;
+package com.daniel.android_gradle_aa_seed.app.module.demo.controller;
 
 import android.support.v7.app.ActionBarActivity;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 
 import com.daniel.android_gradle_aa_seed.app.R;
-import com.daniel.android_gradle_aa_seed.app.demo.service.DemoLogicService;
+import com.daniel.android_gradle_aa_seed.app.module.demo.service.DemoLogicService;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Bean;
