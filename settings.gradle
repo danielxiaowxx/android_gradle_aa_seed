@@ -1,1 +1,1 @@
-include ':app', ':code_gen', ':codegen'
+include ':app', ':codegen'

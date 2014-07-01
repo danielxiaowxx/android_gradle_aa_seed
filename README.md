@@ -60,3 +60,24 @@
     
 5. 全局替换并且更改文件夹名称		
 	将com.daniel.android_gradle_aa_seed替换成实际的包名，如com.globalmarket.like
+
+## IDE版本变更注意
+
+由于Android Studio **0.6.1**版本的对应的		
+
+Android Gradle Plugin版本为：**0.11+**
+
+可使用的Gradle版本为： **1.10 - 1.12**
+
+所以当更新IDE时需要对以下几个地方进行修改
+
+1. com.android.tools.build:gradle
+
+	    dependencies {
+	        classpath 'com.android.tools.build:gradle:0.11+'
+	        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.2+'
+	    }
+
+2. gradle版本（手工指定的情况）
+
+   	Settings->Gradel->Use local gradel distribution，选择合适的gradle版本
